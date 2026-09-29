@@ -3,9 +3,12 @@ import cv2
 import numpy as np
 import mediapipe as mp
 from flask import Flask, request, jsonify, render_template, Response
-from keras.models import Sequential, load_model
-from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+from tensorflow.keras.models import Sequential, load_model
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
+# from keras.models import Sequential, load_model
+# from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+# from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from werkzeug.utils import secure_filename
 import warnings
 warnings.filterwarnings("ignore")
